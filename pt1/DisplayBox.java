@@ -1,3 +1,4 @@
+package pt1;
 /**
  * @author Jayden Randhawa
  * 13/12/2021
@@ -25,16 +26,18 @@ public class DisplayBox {
         else{
             drawBox(width, height);
         }
+
+        inp.close();
     }
 
     // Create the methods for making the box and bars with the default character
 
     public static void drawBox(int width, int height){
-        //Draw the top bar
+        // Draw the top bar
         drawBar(width, false);
         // Draw each bar in the middle
         for(int i = 0;i<height-2;i++) drawBar(width, true);
-        //Draw the bottom bar
+        // Draw the bottom bar
         drawBar(width, false);
     }
     public static void drawBar(int width, boolean isMiddle){
@@ -54,7 +57,7 @@ public class DisplayBox {
         }
     }
     
-    // Create the methods for making the box and bars with the custom character
+    // Create the overload methods for making the box and bars with the custom character
 
     public static void drawBox(int width, int height, char symbol){
         //Draw the top bar

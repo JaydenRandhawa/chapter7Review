@@ -1,3 +1,4 @@
+package pt1;
 /**
  * @author Jayden Randhawa
  * 13/12/2021
@@ -40,15 +41,15 @@ public class TimeConverter{
     }
 
     public static String hoursToMinutes(int hours){
-        //Multiply the hours by 60 and return the product
+        // Multiply the hours by 60 and return the product
         return("There are " + hours*60 + " minutes in " + hours + " hours.");
     }
     public static String daysToHours(int days){
-        //Multiply the days by 24 and return the product
+        // Multiply the days by 24 and return the product
         return("There are " + days*24 + " hours in " + days + " days.");
     }
     public static String minutesToHours(int minutes){
-        //Divide the minutes by 60 and return the quotient
+        // Divide the minutes by 60 and return the quotient
         // If there is a remainder print the remainder in minutes
         if(minutes%60 == 0){
             return("There are " + minutes/60 + " hours in " + minutes + " minutes.");
@@ -58,7 +59,7 @@ public class TimeConverter{
         }
     }
     public static String hoursToDays(int hours){
-        //Divide the hours by 24 and return the quotient
+        // Divide the hours by 24 and return the quotient
         // If there is a remainder print the remainder in hours
         if(hours%24 == 0){
             return("There are " + hours/24 + " days in " + hours + " hours.");
