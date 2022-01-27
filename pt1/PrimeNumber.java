@@ -18,6 +18,12 @@ public class PrimeNumber {
         inp.close();
     }
 
+    /**
+     * Return whether or not the parameter is prime
+     * pre: num > 0
+     * post: returns true if num is prime otherwise returns false
+     */
+
     public static boolean isPrime(int num){
         // Check if the number is divisible by any numbers less than or equal to half of the inputted number
         for (int i = 2; i <= num/2; ++i) {

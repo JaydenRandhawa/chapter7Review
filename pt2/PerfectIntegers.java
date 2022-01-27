@@ -15,8 +15,13 @@ public class PerfectIntegers {
         }
     }
 
+    /**
+     * Tells the user if the inputted number is a perfect number
+     * pre: width < 0
+     * post: returns true of false based on whether or not the input is perfect
+     */
     public static boolean isPerfect(int num){
-        // Check if a number if a number is perfect by adding al of its factors then comparing the sum to the number
+        // Check if a number if a number is perfect by adding all of its factors then comparing the sum to the number
         int sum = 0;
         for(int i=1;i<num;i++){
             // Check if each number less than the inputted number is a factor by checking if the remainder is 0 when divided

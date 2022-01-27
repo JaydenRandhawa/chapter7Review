@@ -1,4 +1,3 @@
-package pt1;
 /**
  * @author Jayden Randhawa
  * 13/12/2021
@@ -26,18 +25,16 @@ public class DisplayBox {
         else{
             drawBox(width, height);
         }
-
-        inp.close();
     }
 
     // Create the methods for making the box and bars with the default character
 
     public static void drawBox(int width, int height){
-        // Draw the top bar
+        //Draw the top bar
         drawBar(width, false);
         // Draw each bar in the middle
         for(int i = 0;i<height-2;i++) drawBar(width, true);
-        // Draw the bottom bar
+        //Draw the bottom bar
         drawBar(width, false);
     }
     public static void drawBar(int width, boolean isMiddle){
@@ -57,15 +54,7 @@ public class DisplayBox {
         }
     }
     
-    // Create the overload methods for making the box and bars with the custom character
-
-
-
-    /**
-     * Draw a square using the drawBar method.
-     * pre: width > 0, height > 0, symbol > 31 && symbol < 128
-     * post: Calls the drawBar method for each line of the square.
-     */
+    // Create the methods for making the box and bars with the custom character
 
     public static void drawBox(int width, int height, char symbol){
         //Draw the top bar
@@ -75,12 +64,6 @@ public class DisplayBox {
         //Draw the bottom bar
         drawBar(width, false, symbol);
     }
-
-    /**
-     * Draw a line using the given symbol
-     * pre: width > 0, isMiddle >=0 && <=1, symbol > 31 && symbol < 128
-     * post: Prints a bar with the inputted dimensions and symbol to the console.
-     */
     public static void drawBar(int width, boolean isMiddle, char symbol){
         // Check if the bar is a middle bar or not
         if(isMiddle){

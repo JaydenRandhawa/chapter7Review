@@ -26,16 +26,25 @@ public class IsoTriangle {
         inp.close();
     }
 
+    /**
+     * Draws a line.
+     * pre: width > 0
+     * post: Prints a bar with the inputted width to the console.
+     */
     public static void drawBar(int width){
         // Print a line with the entered width then enter a newline
         for(int i=0;i<width;i++) System.out.print("*");
         System.out.println();
 
     }
+    /**
+     * Draws an empty space with the given width.
+     * pre: width > 0
+     * post: Prints a white space with the inputted width to the console.
+     */
 
     public static void addSpace(int width){
         // Print an empty space with the entered width
         for(int i=0;i<width;i++) System.out.print(" ");
     }
-    
 }

@@ -1,4 +1,3 @@
-package pt1;
 /**
  * @author Jayden Randhawa
  * 13/12/2021
@@ -12,13 +11,8 @@ public class SpanishNumbers {
             System.out.println(spanishNumber(i));
         }
     }   
-
-    /**
-     * Check what the inputted number is and return the corresponding word in spanish
-     * pre: num > 0 && num <= 10
-     * post: Returns the spanish name for num
-     */
     public static String spanishNumber(int num){
+        // Check what the inputted number is and return the corresponding word in spanish.
         switch(num){
             case 1: return("uno");
             case 2: return("dos");
